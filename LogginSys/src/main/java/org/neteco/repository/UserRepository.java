@@ -1,6 +1,8 @@
 package org.neteco.repository;
 
 
+import java.util.Optional;
+
 import org.neteco.entities.Utenti;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -15,7 +17,7 @@ import org.springframework.stereotype.Repository;
 @Repository("userRepository")
 public interface UserRepository extends JpaRepository<Utenti, Integer> {
 
-	Utenti findByEmail(String email);
+	Optional<Utenti> findByEmail(String email);
 	
 	
 }

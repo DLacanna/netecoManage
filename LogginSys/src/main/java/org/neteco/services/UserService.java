@@ -13,5 +13,5 @@ import org.springframework.stereotype.Service;
 public interface UserService {
 	Optional<Utenti> getUserById(int id);
 	List<Utenti> getAllUsers();
-    Utenti findUserByEmail(String email);
+    Optional<Utenti> findUserByEmail(String email);
 }

@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	@Override
-	public Utenti findUserByEmail(String email) {
+	public Optional<Utenti> findUserByEmail(String email) {
 		return userRepository.findByEmail(email);
 	}
 
