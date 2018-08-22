@@ -1,6 +1,5 @@
 package org.neteco;
 
-import javax.servlet.http.HttpServlet;
 
 import org.apache.log4j.Logger;
 import org.neteco.services.LoginService;
